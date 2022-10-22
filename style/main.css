@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Epilogue", sans-serif;
+}
+a {
+  cursor: pointer;
+  color: hsl(0, 0%, 41%);
+  user-select: none;
+}
+a:hover {
+  color: black;
+  border-color: black;
+}
+.attribution {
+  margin-top: 4rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  background-color: hsl(0, 0%, 98%);
+}
+/* header */
+header {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+nav a {
+  color: hsl(0, 0%, 41%);
+  font-size: 0.9rem;
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+.arrow {
+  position: relative;
+}
+.Toggle {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  flex-direction: column;
+  top: 5rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 10px 10px 23px -6px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 10px 10px 23px -6px rgba(0, 0, 0, 0.07);
+  box-shadow: 10px 10px 23px -6px rgba(0, 0, 0, 0.07);
+}
+.Toggle a {
+  font-size: 0.8rem;
+}
+.Toggle img {
+  transform: translateY(0.2rem);
+  margin-right: 0.5rem;
+}
+.first {
+  transform: translateX(-2.5rem);
+}
+.hide {
+  display: none;
+}
+.second {
+  transform: translateX(-0.5rem);
+}
+.login {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.reg {
+  border: 0.1rem solid hsl(0, 0%, 41%);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.fa-angle-down {
+  display: none;
+}
+.show {
+  display: inline;
+}
+.black {
+  color: black;
+}
+/* header */
+/* main */
+main {
+  display: flex;
+  gap: 5vw;
+  justify-content: center;
+  gap: 10rem;
+}
+main h1 {
+  padding-top: 2rem;
+  font-size: 4rem;
+}
+main p {
+  font-size: 1rem;
+  color: hsl(0, 0%, 41%);
+  margin-bottom: 4rem;
+  line-height: 1.5;
+}
+main a {
+  background-color: black;
+  color: white;
+  border-radius: 0.6rem;
+  padding: 0.8rem 1rem;
+  border: 0.1rem solid black;
+  cursor: pointer;
+}
+main a:hover {
+  background-color: transparent;
+  color: black;
+}
+.leftSide {
+  width: 35vw;
+}
+.images {
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.images img {
+  width: 4.5rem;
+}
+.hero {
+  width: 35vw;
+  aspect-ratio: 3/4;
+}
+.menu {
+  display: none;
+}
+.heroMobile {
+  display: none;
+}
+/* main */
+@media screen and (max-width: 800px) {
+  .hideNav {
+    display: none;
+  }
+  .hideLogin {
+    display: none;
+  }
+  .nav {
+    width: 50vw;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    flex-direction: column;
+    top: 0rem;
+    right: 0rem;
+    padding: 5rem 0rem 0rem 1.5rem;
+  }
+  .login {
+    position: fixed;
+    flex-direction: column;
+    right: 0;
+    bottom: 1rem;
+    width: 55vw;
+    margin: 0rem auto;
+  }
+  .login a {
+    width: 30vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .showMenu {
+    display: block;
+  }
+  .dimm {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.7;
+    width: 110vw;
+    height: 110vh;
+    margin: 0;
+  }
+  .close {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+  }
+  .first {
+    position: relative;
+    transform: none;
+    box-shadow: none;
+    margin: 0;
+    width: 90%;
+    top: 0;
+  }
+  .second {
+    position: relative;
+    transform: none;
+    box-shadow: none;
+    margin: 0;
+    width: 90%;
+    top: 0;
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  main h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  main h1 br {
+    display: none;
+  }
+  main p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .hero {
+    display: none;
+  }
+  .heroMobile {
+    display: block;
+    width: 100%;
+  }
+  .leftSide {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .images {
+    margin-top: 0;
+  }
+  .logo {
+    scale: 1.2;
+  }
+}
